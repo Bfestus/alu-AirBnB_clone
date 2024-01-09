@@ -7,6 +7,24 @@ This repository is about Airbnb clone project at ALU
 
 This project is offered by ALU, from holberton school of software engineering, we will be working to the in whole term. the project is not supposed to be made at on sit, rather is step by step process untill the final project is found. the aim is to clone the real application called "AirBnB". the popular rental property website.
 
+# Airbnb Clone Project README
+
+## Project Description
+
+This project is an Airbnb clone, aiming to replicate the functionalities of the popular accommodation rental platform. The implementation involves building a command-line interface (CLI) to manage Airbnb properties, a web application with dynamic content, and a RESTful API for seamless data manipulation.
+
+## Command Interpreter
+
+The command interpreter serves as a tool to interact with the storage system and validate its functionality. It allows users to create, update, and destroy Airbnb properties using a console or command-line interface.
+
+### How to Start the Command Interpreter
+
+1. Clone the Airbnb Clone repository to your local machine:
+
+   ```bash
+   git clone https://github.com/your-username/airbnb-clone.git
+
+
 ## Here is some Steps the will be followed through out the months:
 
 ### 1. Console
