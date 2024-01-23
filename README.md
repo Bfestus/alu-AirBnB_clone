@@ -6,68 +6,40 @@ This repository is about Airbnb clone project at ALU
 # Airbnb Clone Project Readme
 
 This project is offered by ALU, from holberton school of software engineering, we will be working to the in whole term. the project is not supposed to be made at on sit, rather is step by step process untill the final project is found. the aim is to clone the real application called "AirBnB". the popular rental property website.
+ 
 
-# Airbnb Clone Project README
+# Project Description 
 
-## Project Description
+Here, We'll be cloning the console part of the AirBnB clone Project.
 
-This project is an Airbnb clone, aiming to replicate the functionalities of the popular accommodation rental platform. The implementation involves building a command-line interface (CLI) to manage Airbnb properties, a web application with dynamic content, and a RESTful API for seamless data manipulation.
+We'll be writing a command interpreter to manage our AirBnb objects.
 
-## Command Interpreter
+We'll need to 
+- put in place a parent class (called BaseModel) to take care of the 
+initialization, serialization and deserialization of your future instances 
+- create a simple flow of serialization/deserialization: Instance < - >
+Dictionary < - > json string < - > file
+- create all clases used for AirBnB(User,  State, City, Place...) that
+inherit from BaseModel
+- create the first abstracted storage engine of the project: File storage.
+- create all unittest to validate all our classes and storage engine.
 
-The command interpreter serves as a tool to interact with the storage system and validate its functionality. It allows users to create, update, and destroy Airbnb properties using a console or command-line interface.
-
-### How to Start the Command Interpreter
-
-1. Clone the Airbnb Clone repository to your local machine:
-
-   ```bash
-   git clone https://github.com/your-username/airbnb-clone.git
+Our command interpreter would be able to:
 
 
-## Here is some Steps the will be followed through out the months:
+    - Create a new object(ex: a new User or a new Place)
 
-### 1. Console
-   - Learn how to use the console for command-line operations.
-   - [Console Concepts](#console)
 
-### 2. Create Your Data Model
-   - Develop your data model for the Airbnb clone application.
-   - [Data Model Concepts](#create-your-data-model)
+    - Retrieve an object from a file, a database etc...
 
-### 3. Manage Objects via Console
-   - Implement functionalities to create, update, destroy, etc., Airbnb objects using the console/command interpreter.
-   - [Console Object Management](#manage-objects-via-console)
 
-### 4. Store and Persist Objects to a File (JSON)
-   - Develop a storage engine to abstract Airbnb object storage and persistence.
-   - [File Storage Concepts](#web-static)
+    - Do operations on objects(count, compute stats, etc...)
 
-### 5. Web Static
-   - Learn HTML/CSS for web development.
-   - Create the HTML structure of your Airbnb application.
-   - Create templates for each Airbnb property.
-   - [Web Static Concepts](#web-static)
 
-### 6. MySQL Storage
-   - Replace the file storage with a MySQL database storage for Airbnb properties.
-   - Map your models to tables in the database using an Object-Relational Mapping (O.R.M.).
-   - [MySQL Storage Concepts](#mysql-storage)
+    - Update attributes of an object
 
-### 7. Web Framework - Templating
-   - Create your first web server in Python.
-   - Make your static HTML files dynamic by using objects stored in a file or database.
-   - [Web Framework Concepts](#web-framework-templating)
 
-### 8. RESTful API
-   - Expose all your Airbnb objects stored via a JSON web interface.
-   - Manipulate your Airbnb objects via a RESTful API.
-   - [RESTful API Concepts](#restful-api)
-
-### 9. Web Dynamic
-   - Learn JQuery for dynamic Airbnb property loading.
-   - Load Airbnb objects from the client side using your own RESTful API.
-   - [Web Dynamic Concepts](#web-dynamic)
+    - Destroy an object 
 
 
 Writer: Festus Bigirimana
